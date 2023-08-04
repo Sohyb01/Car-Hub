@@ -4,7 +4,9 @@ import Image from "next/image";
 import { CustomButton } from ".";
 
 const Hero = () => {
-  const handleScroll = () => {};
+  const handleScroll = () => {
+    document.getElementById("discover")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="hero">
